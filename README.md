@@ -1,3 +1,6 @@
-## Jacob Wirth
+## Jacob Wirth Profile Page Source
 
-Welcome to my homepage.
+### Development
+```
+bundle exec jekyll serve
+```

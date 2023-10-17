@@ -1,0 +1,105 @@
+---
+---
+
+@import "minima";
+
+/*
+ * Darkmode color overrides
+ */
+html {
+    --background-color: #fdfdfd;
+    --text-color: #111;
+    --link-color: #2a7ae2;
+    --link-visited-color: #1756a9;
+    --title-color: #424242;
+    --top-border-color: #424242;
+    --content-border-color: #e8e8e8;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --background-color: rgb(30, 30, 30);
+        --text-color: #fdfdfd;
+        --link-color: #4e8de0;
+        --link-visited-color: #2c62a8;
+        --title-color: #bebebe;
+        --top-border-color: #424242;
+        --content-border-color: #505050;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+.site-title, .site-title:visited {
+    color: var(--title-color);
+}
+
+.site-nav .page-link {
+    color: var(--text-color);
+}
+
+.site-header {
+    border-top: 5px solid var(--top-border-color);
+    border-bottom: 1px solid var(--content-border-color);
+}
+
+.site-footer {
+    border-top: 1px solid var(--content-border-color);
+}
+
+// Align GitHub icon better
+.svg-icon {
+    vertical-align: -15%;
+}
+
+// Full width override
+body {
+    min-width: 230px;
+}
+.wrapper {
+    max-width: none;
+}
+
+/*
+ * Home page layout
+ */
+.profile {
+    display: block;
+    float: left;
+    width: 200px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .profile {
+        margin-right: 15px;
+    }
+}
+
+#profile-picture {
+    display: block;
+    width: 198px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid var(--top-border-color);
+}
+
+.projects {
+    display: block;
+    float: left;
+}
