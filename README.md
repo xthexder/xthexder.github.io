@@ -1,6 +1,6 @@
 ## Jacob Wirth Profile Page Source
 
-### Development
+### Local Development
 ```
 bundle exec jekyll serve
 ```

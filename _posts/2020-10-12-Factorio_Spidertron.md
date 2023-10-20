@@ -15,8 +15,29 @@ Click on the Spidertron again to have it return home.
 <link href="/assets/spidertron.css" rel="stylesheet">
 <script src="/assets/spidertron.js"></script>
 
-<div style="width: 150px; height: 150px;">
-    <div style="position: relative; left: 75px; top: 100px;" class="spidertron-home" data-spidertron-scale="0.6" data-spidertron-speed="400"></div>
+<style>
+    .warning-border {
+        width: 210px;
+        height: 210px;
+        border: 4px solid #111;
+        position: relative;
+        background: linear-gradient(45deg, #111 25%, #DD2 25%, #DD2 50%, #111 50%, #111 75%, #DD2 75%);
+        background-size: 25% 25%;
+    }
+    .warning-box {
+        background-color: #DD2;
+        border: 4px solid #111;
+        width: 160px;
+        height: 160px;
+        margin-left: 23px;
+        margin-top: 23px;
+    }
+</style>
+
+<div class="warning-border">
+    <div class="warning-box">
+        <div style="position: relative; left: 50%; top: 64%;" class="spidertron-home" data-spidertron-scale="0.6" data-spidertron-speed="400"></div>
+    </div>
 </div>
 
 The source code is available of github here: <https://github.com/AlternativeFFFF/spidertron>

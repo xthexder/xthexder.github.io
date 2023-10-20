@@ -7,24 +7,26 @@
  * Darkmode color overrides
  */
 html {
-    --background-color: #fdfdfd;
+    --background-color: #f3fbfa;
+    --header-background-color: #d8f0e9;
     --text-color: #111;
     --link-color: #2a7ae2;
     --link-visited-color: #1756a9;
     --title-color: #424242;
-    --top-border-color: #424242;
-    --content-border-color: #e8e8e8;
+    --top-border-color: #7e7e7e;
+    --content-border-color: #b8b8b8;
 }
 
 @media (prefers-color-scheme: dark) {
     html {
-        --background-color: rgb(30, 30, 30);
+        --background-color: #1e1f1f;
+        --header-background-color: #1f2221;
         --text-color: #fdfdfd;
         --link-color: #4e8de0;
         --link-visited-color: #2c62a8;
         --title-color: #bebebe;
         --top-border-color: #424242;
-        --content-border-color: #505050;
+        --content-border-color: #3f3f3f;
     }
 }
 
@@ -53,7 +55,12 @@ a:visited {
     color: var(--text-color);
 }
 
+.site-nav .current-page {
+    text-decoration: underline;
+}
+
 .site-header {
+    background-color: var(--header-background-color);
     border-top: 5px solid var(--top-border-color);
     border-bottom: 1px solid var(--content-border-color);
 }
@@ -67,36 +74,30 @@ a:visited {
     vertical-align: -15%;
 }
 
-// Full width override
+// Width override
 body {
     min-width: 230px;
 }
 .wrapper {
-    max-width: none;
+    max-width: max(75%, 800px);
 }
 
 /*
  * Home page layout
  */
-.profile {
-    display: block;
-    float: left;
-    width: 200px;
-    margin-right: 30px;
-}
-
-@media screen and (max-width: 800px) {
-    .profile {
-        margin-right: 15px;
-    }
-}
-
 #profile-picture {
-    display: block;
+    display: inline-block;
     width: 198px;
     height: auto;
     border-radius: 50%;
     border: 1px solid var(--top-border-color);
+    vertical-align: top;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+#profile-summary {
+    display: inline-block;
 }
 
 .projects {
