@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Azure Kinect Recording and Playback"
+title: "Azure Kinect Recording and Playback API"
 date: 2019-01-28
 categories: projects
 ---

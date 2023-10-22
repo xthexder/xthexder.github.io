@@ -9,49 +9,27 @@ layout: profile
     <h1 class="page-heading">Jacob Wirth</h1>
     <h2>Software Engineer</h2>
 
-    <div class="profile-segment">
-      <ul class="contact-list">
-        <li class="p-name">
-          {%- if site.author -%}
-            {{ site.author | escape }}
-          {%- else -%}
-            {{ site.title | escape }}
-          {%- endif -%}
-        </li>
-        {%- if site.email -%}
-        <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    <ul class="contact-list">
+      <li class="p-name">
+        {%- if site.author -%}
+          {{ site.author | escape }}
+        {%- else -%}
+          {{ site.title | escape }}
         {%- endif -%}
-      </ul>
-    </div>
+      </li>
+      {%- if site.email -%}
+      <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      {%- endif -%}
+    </ul>
 
-    <div class="profile-segment">
-      {%- include social.html -%}
-    </div>
+    {%- include social.html -%}
   </div>
 </div>
 
 <div class="profile-segment">
-  <p>{{- site.description | escape -}}</p>
-</div>
-
-<div class="projects">
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">Projects</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+  <p>
+    I'm an experienced software engineer with a passion for graphics, software architecture, and performance optimization.
+    I am fairly detail oriented and like knowing how things work, from mechanical systems like car engines to philosophy and logic.
+    This site contains a showcase of some of the projects I've worked on both professionally and in my free time.
+  </p>
 </div>

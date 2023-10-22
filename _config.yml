@@ -20,11 +20,10 @@
 
 title: Jacob Wirth
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm an experienced software engineer with a passion for graphics, software architecture, and performance optimization.
-  I am fairly detail oriented and like knowing how things work, from mechanical systems like car engines to philosophy and logic.
-  This site contains a showcase of some of the projects I've worked on both professionally and in my free time.
+  Jacob Wirth is a software engineer with a passion for graphics rendering and writing high-performance software, and other hobbies like cars and photography.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jacob.wirth.dev" # the base hostname & protocol for your site, e.g. http://example.com
+author: "@xthexder"
 email: work@jacob.wirth.io
 github_username: xthexder
 

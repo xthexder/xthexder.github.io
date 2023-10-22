@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Toxiproxy"
+title: "Toxiproxy - Network Resiliency Testing Tool"
 date: 2014-09-30
 categories: projects
 ---
