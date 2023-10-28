@@ -1,0 +1,32 @@
+---
+layout: page
+title: Photography
+permalink: /photography/
+---
+
+<style>
+  #crossfade {
+    position: relative;
+  }
+
+  #crossfade > img {
+    width: 100%;
+  }
+
+  #crossfade > img:nth-child(2)  {
+    animation: fadeAnimation 4s ease-in-out infinite 0s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  @keyframes fadeAnimation { 
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
+<div id="crossfade">
+  <img src="https://files.wirth.dev/NorthernLights-2023/DSC04192.png" alt="Image 1">
+  <img src="https://files.wirth.dev/NorthernLights-2023/DSC04193.png" alt="Image 2">
+</div>
