@@ -5,28 +5,37 @@ permalink: /photography/
 ---
 
 <style>
-  #crossfade {
-    position: relative;
-  }
+#northern-lights {
+  background-image: url("https://files.wirth.dev/NorthernLights-2023/DSC04192_thumb.jpg");
+  background-size: cover;
+}
 
-  #crossfade > img {
-    width: 100%;
-  }
+.gallery-tile {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  aspect-ratio: 6/4;
 
-  #crossfade > img:nth-child(2)  {
-    animation: fadeAnimation 4s ease-in-out infinite 0s;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
+  color: white;
+  font-weight: bold;
+}
 
-  @keyframes fadeAnimation { 
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-  }
+.gallery-tile:hover {
+  text-decoration: underline;
+}
+
+.gallery-tile > span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  text-decoration: inherit;
+}
 </style>
-<div id="crossfade">
-  <img src="https://files.wirth.dev/NorthernLights-2023/DSC04192.png" alt="Image 1">
-  <img src="https://files.wirth.dev/NorthernLights-2023/DSC04193.png" alt="Image 2">
-</div>
+<a href="/photography/northern_lights.html">
+  <div id="northern-lights" class="gallery-tile">
+    <span>Northern Lights 2023 - Animation</span>
+  </div>
+</a>

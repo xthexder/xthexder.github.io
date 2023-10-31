@@ -11,6 +11,7 @@ html {
     --header-background-color: #d8f0e9;
     --nav-dropdown-color: #fdfdfd;
     --text-color: #111;
+    --text-sub-color: #828282;
     --link-color: #2a7ae2;
     --link-visited-color: #1756a9;
     --title-color: #424242;
@@ -24,6 +25,7 @@ html {
         --header-background-color: #1f2221;
         --nav-dropdown-color: #393e3d;
         --text-color: #fdfdfd;
+        --text-sub-color: #7e7e7e;
         --link-color: #4e8de0;
         --link-visited-color: #2c62a8;
         --title-color: #bebebe;
@@ -82,6 +84,33 @@ a:visited {
     border-top: 1px solid var(--content-border-color);
 }
 
+// Indent paragraphs in posts
+.post-content > p {
+    text-indent: 1.5em;
+}
+
+// Custom footer
+h2.footer-heading {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+h3.footer-heading {
+    font-size: 16px;
+    color: var(--text-sub-color);
+}
+
+.footer-col-3 {
+    text-align: right;
+}
+
+.footer-copyright {
+    color: var(--content-border-color);
+    font-size: 12px;
+    text-align: center;
+}
+
 // Align GitHub icon better
 .svg-icon {
     vertical-align: -15%;
@@ -113,6 +142,10 @@ body {
 
 #profile-summary {
     display: inline-block;
+}
+
+.profile-segment > p {
+    text-indent: 1.5em;
 }
 
 .projects {

@@ -2,5 +2,7 @@
   url: /
 - title: Projects
   url: /projects/
-# - title: Photography
-#   url: /photography/
+  description: "A showcase of some of the projects I've worked on both professionally and in my free time"
+- title: Photography
+  url: /photography/
+  description: "I enjoy photography as a hobby and occasionally post some of my photos publicly on this page"

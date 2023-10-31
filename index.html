@@ -6,8 +6,8 @@ layout: profile
   <img id="profile-picture" src="/images/JacobWirthProfile.jpg" alt="Profile picture"/>
 
   <div id="profile-summary">
-    <h1 class="page-heading">Jacob Wirth</h1>
-    <h2>Software Engineer</h2>
+    <h1 class="page-heading">{{ site.title | escape }}</h1>
+    <h2>{{ site.description }}</h2>
 
     <ul class="contact-list">
       <li class="p-name">
@@ -28,8 +28,17 @@ layout: profile
 
 <div class="profile-segment">
   <p>
-    I'm an experienced software engineer with a passion for graphics, software architecture, and performance optimization.
+    I'm an experienced software engineer with a passion for graphics, AR/VR, software architecture, and optimization.
     I am fairly detail oriented and like knowing how things work, from mechanical systems like car engines to philosophy and logic.
-    This site contains a showcase of some of the projects I've worked on both professionally and in my free time.
   </p>
+  <h3>Site Contents</h3>
+  <ul>
+  {%- for nav in site.data.navigation -%}
+    {%- if nav.title and nav.description -%}
+      <li>
+        <a href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a> - {{ nav.description | escape }}
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+  </ul>
 </div>

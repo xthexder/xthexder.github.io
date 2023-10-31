@@ -1,0 +1,52 @@
+---
+layout: none
+title: Photography - Northern Lights 2023 - Animation
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <style>
+    #crossfade {
+      position: relative;
+      aspect-ratio: 6/4;
+      max-height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #crossfade > img {
+      width: 100%;
+    }
+
+    #crossfade > img:nth-child(2)  {
+      animation: fadeAnimation 4s ease-in-out infinite 0s;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    @keyframes fadeAnimation { 
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main aria-label="Content">
+      <div id="crossfade">
+        <img src="https://files.wirth.dev/NorthernLights-2023/DSC04192.jpg" alt="Northern Lights 1">
+        <img src="https://files.wirth.dev/NorthernLights-2023/DSC04193.jpg" alt="Northern Lights 2">
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
