@@ -1,0 +1,107 @@
+---
+layout: page
+title: Photography - Public Photos
+---
+
+<style>
+.gallery-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
+}
+.gallery-tile {
+  display: block;
+  max-width: 400px;
+  max-height: 267px;
+  /* max aspect-ratio: 6/4; */
+}
+</style>
+
+<script src="/assets/photoswipe/photoswipe.umd.min.js"></script>
+<script src="/assets/photoswipe/photoswipe-lightbox.umd.min.js"></script>
+<link rel="stylesheet" href="/assets/photoswipe/photoswipe.css">
+
+<div class="gallery-wrapper">
+  <a href="https://files.wirth.dev/PublicProcessed/DSC00425.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC00425_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC00554.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC00554_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC00691~2.jpg"
+      data-pswp-width="5639" data-pswp-height="3759">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC00691~2_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC01040.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC01040_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC01811.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC01811_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC02093~2.jpg"
+      data-pswp-width="1616" data-pswp-height="1080">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC02093~2_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC02658~2.jpg"
+      data-pswp-width="1674" data-pswp-height="2231">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC02658~2_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC02678.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC02678_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC03020~2.jpg"
+      data-pswp-width="3310" data-pswp-height="2206">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC03020~2_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC03080-2.jpg"
+      data-pswp-width="5700" data-pswp-height="2850">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC03080-2_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC03306.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC03306_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC03648~2.jpg"
+      data-pswp-width="4666" data-pswp-height="3498">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC03648~2_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC03655~2.jpg"
+      data-pswp-width="3162" data-pswp-height="2107">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC03655~2_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC04030.jpg"
+      data-pswp-width="4000" data-pswp-height="6000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC04030_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC04059.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC04059_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC04104.jpg"
+      data-pswp-width="5813" data-pswp-height="3875">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC04104_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC04127.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC04127_thumb.jpg">
+  </a>
+  <a href="https://files.wirth.dev/PublicProcessed/DSC04211.jpg"
+      data-pswp-width="6000" data-pswp-height="4000">
+    <img class="gallery-tile" src="https://files.wirth.dev/PublicProcessed/DSC04211_thumb.jpg">
+  </a>
+</div>
+
+<script type="text/javascript">
+  var lightbox = new PhotoSwipeLightbox({
+    gallery: '.gallery-wrapper',
+    children: 'a',
+    pswpModule: PhotoSwipe
+  });
+  lightbox.init();
+</script>
